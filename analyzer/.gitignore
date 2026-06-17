@@ -1,0 +1,6 @@
+# Python venv des Prototyps
+.venv/
+
+# Python-Bytecode
+__pycache__/
+*.pyc

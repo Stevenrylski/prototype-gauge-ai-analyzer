@@ -1,0 +1,233 @@
+{
+	"projectName": "gauge-bachelorprojekt",
+	"timestamp": "Jun 17, 2026 at 10:14am",
+	"timestampISO": "2026-06-17T10:14:51.5018098+02:00",
+	"successRate": 40,
+	"environment": "default",
+	"tags": "",
+	"executionTime": 812,
+	"executionStatus": "failed",
+	"specResults": [
+		{
+			"specHeading": "Specification Heading",
+			"fileName": "C:\\Users\\srylski\\gauge-bachelorprojekt\\specs\\example.spec",
+			"tags": [],
+			"timestampISO": "2026-06-17T10:14:52.0264607+02:00",
+			"executionTime": 5,
+			"executionStatus": "failed",
+			"scenarios": [
+				{
+					"scenarioHeading": "Vowel counts in single word",
+					"tags": ["single word"],
+					"executionTime": 2,
+					"executionStatus": "failed",
+					"contexts": [
+						{
+							"itemType": "step",
+							"stepText": "Vowels in English language are \"aeiou\".",
+							"parameters": [],
+							"table": null,
+							"beforeStepHookFailure": null,
+							"beforeStepHookMessages": [],
+							"afterStepHookFailure": null,
+							"afterStepHookMessages": [],
+							"result": {
+								"status": "passed",
+								"stackTrace": "",
+								"screenshot": "",
+								"errorMessage": "",
+								"executionTime": 0,
+								"skippedReason": "",
+								"messages": ["Given vowels are aeiou"],
+								"errorType": "assertion",
+								"ScreenshotFile": ""
+							}
+						}
+					],
+					"teardowns": [],
+					"items": [
+						{
+							"itemType": "step",
+							"stepText": "The word \"gauge\" has \"4\" vowels.",
+							"parameters": [
+								{"parameterType": "static", "name": "", "value": "gauge", "table": null},
+								{"parameterType": "static", "name": "", "value": "4", "table": null}
+							],
+							"table": null,
+							"beforeStepHookFailure": null,
+							"beforeStepHookMessages": [],
+							"afterStepHookFailure": null,
+							"afterStepHookMessages": [],
+							"result": {
+								"status": "failed",
+								"stackTrace": "Traceback (most recent call last):\n  File \"C:\\Users\\srylski\\gauge-bachelorprojekt\\env\\lib\\site-packages\\getgauge\\executor.py\", line 68, in execute\n    func(*args)\n  File \"C:\\Users\\srylski\\gauge-bachelorprojekt\\step_impl\\step_impl.py\", line 16, in assert_no_of_vowels_in\n    assert str(number) == str(number_of_vowels(word))\nAssertionError",
+								"screenshot": "",
+								"errorMessage": "AssertionError: expected '4' to equal '3'",
+								"executionTime": 2,
+								"skippedReason": "",
+								"messages": [],
+								"errorType": "assertion",
+								"ScreenshotFile": ""
+							}
+						}
+					],
+					"beforeScenarioHookFailure": null,
+					"beforeScenarioHookMessages": [],
+					"afterScenarioHookFailure": null,
+					"afterScenarioHookMessages": [],
+					"skipErrors": [],
+					"tableRowIndex": -1
+				},
+				{
+					"scenarioHeading": "Vowel counts in multiple word",
+					"tags": [],
+					"executionTime": 3,
+					"executionStatus": "failed",
+					"contexts": [],
+					"teardowns": [],
+					"items": [
+						{
+							"itemType": "step",
+							"stepText": "Almost all words have vowels {}",
+							"parameters": [],
+							"table": null,
+							"beforeStepHookFailure": null,
+							"beforeStepHookMessages": [],
+							"afterStepHookFailure": null,
+							"afterStepHookMessages": [],
+							"result": {
+								"status": "failed",
+								"stackTrace": "Traceback (most recent call last):\n  File \"C:\\Users\\srylski\\gauge-bachelorprojekt\\step_impl\\step_impl.py\", line 29, in assert_words_vowel_count\n    assert expected == actual\nAssertionError",
+								"screenshot": "",
+								"errorMessage": "AssertionError: expected ['3', '2', '1', '1', '0'] to equal ['3', '2', '1', '1', '1']",
+								"executionTime": 3,
+								"skippedReason": "",
+								"messages": [],
+								"errorType": "assertion",
+								"ScreenshotFile": ""
+							}
+						}
+					],
+					"beforeScenarioHookFailure": null,
+					"beforeScenarioHookMessages": [],
+					"afterScenarioHookFailure": null,
+					"afterScenarioHookMessages": [],
+					"skipErrors": [],
+					"tableRowIndex": -1
+				}
+			],
+			"isTableDriven": false,
+			"datatable": null,
+			"beforeSpecHookFailure": null,
+			"beforeSpecHookMessages": [],
+			"afterSpecHookFailure": null,
+			"afterSpecHookMessages": [],
+			"passedScenarioCount": 0,
+			"failedScenarioCount": 2,
+			"skippedScenarioCount": 0
+		},
+		{
+			"specHeading": "Connection Handling",
+			"fileName": "C:\\Users\\srylski\\gauge-bachelorprojekt\\specs\\connection.spec",
+			"tags": [],
+			"timestampISO": "2026-06-17T10:14:55.0264607+02:00",
+			"executionTime": 4,
+			"executionStatus": "failed",
+			"scenarios": [
+				{
+					"scenarioHeading": "Service is reachable",
+					"tags": [],
+					"executionTime": 4,
+					"executionStatus": "failed",
+					"contexts": [],
+					"teardowns": [],
+					"items": [
+						{
+							"itemType": "step",
+							"stepText": "Connect to the backend service",
+							"parameters": [],
+							"table": null,
+							"beforeStepHookFailure": null,
+							"beforeStepHookMessages": [],
+							"afterStepHookFailure": null,
+							"afterStepHookMessages": [],
+							"result": {
+								"status": "failed",
+								"stackTrace": "Traceback (most recent call last):\n  File \"C:\\Users\\srylski\\gauge-bachelorprojekt\\step_impl\\connection_impl.py\", line 22, in connect\n    sock.connect((host, port))\nConnectionRefusedError: [Errno 111] Connection refused",
+								"screenshot": "",
+								"errorMessage": "ConnectionRefusedError: could not connect to ci-runner-07.internal.example.com:5432 (user srylski)",
+								"executionTime": 4,
+								"skippedReason": "",
+								"messages": [],
+								"errorType": "assertion",
+								"ScreenshotFile": ""
+							}
+						}
+					],
+					"beforeScenarioHookFailure": null,
+					"beforeScenarioHookMessages": [],
+					"afterScenarioHookFailure": null,
+					"afterScenarioHookMessages": [],
+					"skipErrors": [],
+					"tableRowIndex": -1
+				},
+				{
+					"scenarioHeading": "Service stays reachable under retry",
+					"tags": [],
+					"executionTime": 0,
+					"executionStatus": "failed",
+					"contexts": [],
+					"teardowns": [],
+					"items": [
+						{
+							"itemType": "step",
+							"stepText": "Connect to the backend service",
+							"parameters": [],
+							"table": null,
+							"beforeStepHookFailure": null,
+							"beforeStepHookMessages": [],
+							"afterStepHookFailure": null,
+							"afterStepHookMessages": [],
+							"result": {
+								"status": "failed",
+								"stackTrace": "Traceback (most recent call last):\n  File \"C:\\Users\\srylski\\gauge-bachelorprojekt\\step_impl\\connection_impl.py\", line 22, in connect\n    sock.connect((host, port))\nConnectionRefusedError: [Errno 111] Connection refused",
+								"screenshot": "",
+								"errorMessage": "ConnectionRefusedError: could not connect to ci-runner-07.internal.example.com:5432 (user srylski)",
+								"executionTime": 0,
+								"skippedReason": "",
+								"messages": [],
+								"errorType": "assertion",
+								"ScreenshotFile": ""
+							}
+						}
+					],
+					"beforeScenarioHookFailure": null,
+					"beforeScenarioHookMessages": [],
+					"afterScenarioHookFailure": null,
+					"afterScenarioHookMessages": [],
+					"skipErrors": [],
+					"tableRowIndex": -1
+				}
+			],
+			"isTableDriven": false,
+			"datatable": null,
+			"beforeSpecHookFailure": null,
+			"beforeSpecHookMessages": [],
+			"afterSpecHookFailure": null,
+			"afterSpecHookMessages": [],
+			"passedScenarioCount": 0,
+			"failedScenarioCount": 2,
+			"skippedScenarioCount": 0
+		}
+	],
+	"beforeSuiteHookFailure": null,
+	"beforeSuiteHookMessages": [],
+	"afterSuiteHookFailure": null,
+	"afterSuiteHookMessages": [],
+	"passedSpecsCount": 0,
+	"failedSpecsCount": 2,
+	"skippedSpecsCount": 0,
+	"passedScenariosCount": 0,
+	"failedScenariosCount": 4,
+	"skippedScenariosCount": 0
+}

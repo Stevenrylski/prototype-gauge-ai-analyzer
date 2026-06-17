@@ -1,0 +1,7 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Gauge-Laufzeit-Logs am Repo-Stamm (vom Language-Server erzeugt)
+logs/

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gauge Fehleranalyse</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Gauge &ndash; KI-gestuetzte Fehleranalyse</h1>
+        <p id="summary" class="summary">Lade Report &hellip;</p>
+    </header>
+
+    <main>
+        <div id="message" class="message" hidden></div>
+        <ul id="failures" class="failures"></ul>
+    </main>
+
+    <template id="failure-template">
+        <li class="failure">
+            <div class="failure-head">
+                <span class="badge"></span>
+                <span class="step"></span>
+            </div>
+            <p class="error"></p>
+            <p class="occurrences"></p>
+            <button class="analyze-btn">Mit KI analysieren</button>
+            <div class="analysis" hidden>
+                <h3>Analyse</h3>
+                <pre class="analysis-text"></pre>
+                <details class="sent">
+                    <summary>An die KI gesendet (anonymisiert)</summary>
+                    <pre class="sent-text"></pre>
+                </details>
+            </div>
+        </li>
+    </template>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
