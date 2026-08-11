@@ -105,6 +105,19 @@ main { max-width: 860px; margin: 1.5rem auto; padding: 0 1.5rem; }
 
 .analysis-text.error-text { color: var(--fail); }
 
+/* Strukturierte Analyse: Klassifikations-Badge, Konfidenz-Label, zwei
+   Textabschnitte (Ursache/Massnahme). */
+.analysis-badges { margin: 0 0 0.5rem; display: flex; gap: 0.5rem; }
+
+.analysis-class { background: #e8f0fe; color: var(--accent); }
+
+.analysis-confidence { background: #eef1f6; color: var(--muted); }
+
+/* Konfidenz "niedrig" faellt optisch auf (Warnfarbe). */
+.analysis-confidence.confidence-low { background: #fdecea; color: var(--fail); }
+
+.analysis-field { margin: 0 0 0.5rem; white-space: pre-line; }
+
 .sent { margin-top: 0.8rem; }
 .sent summary { cursor: pointer; color: var(--muted); font-size: 0.85rem; }
 
@@ -119,3 +132,174 @@ main { max-width: 860px; margin: 1.5rem auto; padding: 0 1.5rem; }
 }
 
 .empty { color: var(--ok); font-weight: 600; }
+.empty-error { color: var(--fail); }
+
+/* --- Workspace-Tabs ------------------------------------------------------ */
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.tab {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0.35rem 0.9rem;
+    font-size: 0.88rem;
+    color: var(--text);
+    cursor: pointer;
+}
+
+.tab:hover { border-color: var(--accent); }
+
+.tab.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+}
+
+/* --- Badges (Workspaces, Cache) ------------------------------------------ */
+
+.badge-workspaces { background: #e8f0fe; color: var(--accent); }
+.badge-workspaces.badge-multi { background: #fdecea; color: var(--fail); }
+.badge-cached { background: #e6f4ea; color: var(--ok); }
+
+/* --- Meldungs-Varianten --------------------------------------------------- */
+
+.variants { margin: 0.2rem 0 0.4rem; }
+.variants-summary { cursor: pointer; color: var(--muted); font-size: 0.85rem; }
+
+.variants-list {
+    margin: 0.4rem 0 0;
+    padding-left: 1.2rem;
+    font-family: "Consolas", monospace;
+    font-size: 0.8rem;
+    color: var(--muted);
+}
+
+.variants-list li { margin-bottom: 0.3rem; word-break: break-word; }
+
+/* --- Buttons -------------------------------------------------------------- */
+
+.actions { display: flex; gap: 0.6rem; }
+
+.secondary-btn {
+    background: var(--card);
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.secondary-btn:hover { background: #e8f0fe; }
+.secondary-btn:disabled { color: #9bb3e8; border-color: #9bb3e8; cursor: default; }
+
+.analysis-meta { font-weight: 400; font-size: 0.8rem; color: var(--muted); }
+
+/* --- Chat ------------------------------------------------------------------ */
+
+.chat { margin-top: 1rem; border-top: 1px dashed var(--border); padding-top: 0.8rem; }
+
+.chat h4 { margin: 0 0 0.5rem; font-size: 0.92rem; }
+
+.chat-history {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-height: 320px;
+    overflow-y: auto;
+}
+
+.chat-message {
+    max-width: 85%;
+    padding: 0.5rem 0.8rem;
+    border-radius: 10px;
+    font-size: 0.88rem;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.chat-user {
+    align-self: flex-end;
+    background: var(--accent);
+    color: #fff;
+    border-bottom-right-radius: 2px;
+}
+
+.chat-assistant {
+    align-self: flex-start;
+    background: #f0f2f5;
+    border-bottom-left-radius: 2px;
+}
+
+.chat-pending { color: var(--muted); font-style: italic; }
+
+.chat-form { display: flex; gap: 0.5rem; margin-top: 0.6rem; }
+
+.chat-input {
+    flex: 1;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.5rem 0.7rem;
+    font-size: 0.9rem;
+    font-family: inherit;
+}
+
+.chat-input:focus { outline: 2px solid var(--accent); border-color: transparent; }
+
+.chat-send {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.chat-send:disabled { background: #9bb3e8; cursor: default; }
+
+/* --- Aehnlichkeits-Check (Cluster) ---------------------------------------- */
+
+.cluster-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.cluster-status { color: var(--muted); font-size: 0.85rem; }
+
+/* --- Alle analysieren ------------------------------------------------------ */
+
+.analyze-all-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.analyze-all-status { color: var(--muted); font-size: 0.85rem; }
+
+.cluster-results { margin-bottom: 1.2rem; }
+
+.cluster {
+    background: #fffbe6;
+    border: 1px solid #f0e2a0;
+    border-radius: 8px;
+    padding: 0.8rem 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.cluster h3 { margin: 0 0 0.4rem; font-size: 0.95rem; }
+
+.cluster ul { margin: 0 0 0.4rem; padding-left: 1.2rem; font-size: 0.88rem; }
+
+.cluster-reason { margin: 0; color: var(--muted); font-size: 0.85rem; }
+
+.cluster-empty { color: var(--muted); font-size: 0.9rem; }

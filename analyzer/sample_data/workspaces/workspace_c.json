@@ -1,0 +1,86 @@
+{
+  "projectName": "demo-workspace-c",
+  "timestamp": "Jul 15, 2026 at 2:47am",
+  "executionStatus": "failed",
+  "successRate": 87,
+  "failedSpecsCount": 1,
+  "failedScenariosCount": 5,
+  "passedScenariosCount": 33,
+  "specResults": [
+    {
+      "specHeading": "Checkout und Aktionen (Nachtlauf)",
+      "scenarios": [
+        {
+          "scenarioHeading": "Endsumme mit Versandkosten",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Endsumme der Bestellung \"ORD-2026-1187\" inkl. Versand wird berechnet",
+              "result": {
+                "status": "failed",
+                "errorMessage": "'shipping_cost'",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-c/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-c/step_impl/checkout_steps.py\", line 63, in calculate_order_total\n    total = subtotal + response[\"shipping_cost\"]\nKeyError: 'shipping_cost'"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Verfuegbarkeit im Lager-Service",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Verfuegbarkeit des Artikels \"BT-Over-Ear-X3\" wird beim Lager-Service geprueft",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='inventory.shop.example.com', port=443): Read timed out. (read timeout=10)",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-c/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-c/step_impl/inventory_steps.py\", line 27, in check_availability\n    response = session.get(url, timeout=10)\nrequests.exceptions.ReadTimeout: HTTPSConnectionPool(host='inventory.shop.example.com', port=443): Read timed out. (read timeout=10)"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-2044 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-2044\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fb51e800000>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-c/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-c/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fb51e800000>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-2045 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-2045\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fb51e800040>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-c/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-c/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fb51e800040>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Gutschein einloesen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Der Gutschein \"SOMMER25\" wird auf die Bestellung angewendet",
+              "result": {
+                "status": "failed",
+                "errorMessage": "500 Internal Server Error for url: https://api.shop.example.com/v1/coupons/redeem (request id 8f41c6d2-6a1b-4a7e-9d35-2f8a1b0c9e77)",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-c/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-c/step_impl/coupon_steps.py\", line 19, in redeem_coupon\n    response.raise_for_status()\nrequests.exceptions.HTTPError: 500 Internal Server Error for url: https://api.shop.example.com/v1/coupons/redeem (request id 8f41c6d2-6a1b-4a7e-9d35-2f8a1b0c9e77)"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

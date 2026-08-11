@@ -1,0 +1,1416 @@
+{
+  "projectName": "demo-workspace-b",
+  "timestamp": "Jul 15, 2026 at 3:12am",
+  "executionStatus": "failed",
+  "successRate": 11,
+  "failedSpecsCount": 1,
+  "failedScenariosCount": 100,
+  "passedScenariosCount": 12,
+  "specResults": [
+    {
+      "specHeading": "Checkout-Regression (Nachtlauf)",
+      "scenarios": [
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1001 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1001\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400030>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400030>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1002 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1002\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400060>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400060>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1003 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1003\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400090>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400090>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1004 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1004\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4000c0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4000c0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1005 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1005\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4000f0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4000f0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1006 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1006\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400120>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400120>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1007 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1007\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400150>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400150>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1008 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1008\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400180>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400180>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1009 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1009\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4001b0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4001b0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1010 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1010\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4001e0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4001e0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1011 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1011\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400210>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400210>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1012 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1012\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400240>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400240>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1013 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1013\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400270>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400270>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1014 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1014\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4002a0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4002a0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1015 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1015\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4002d0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4002d0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1016 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1016\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400300>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400300>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1017 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1017\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400330>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400330>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1018 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1018\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400360>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400360>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1019 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1019\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400390>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400390>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1020 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1020\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4003c0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4003c0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1021 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1021\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4003f0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4003f0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1022 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1022\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400420>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400420>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1023 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1023\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400450>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400450>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1024 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1024\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400480>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400480>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1025 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1025\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4004b0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4004b0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1026 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1026\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4004e0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4004e0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1027 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1027\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400510>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400510>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1028 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1028\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400540>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400540>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1029 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1029\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400570>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400570>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1030 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1030\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4005a0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4005a0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1031 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1031\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4005d0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4005d0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1032 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1032\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400600>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400600>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1033 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1033\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400630>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400630>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1034 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1034\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400660>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400660>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1035 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1035\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400690>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400690>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1036 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1036\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4006c0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4006c0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1037 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1037\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4006f0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4006f0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1038 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1038\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400720>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400720>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1039 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1039\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400750>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400750>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1040 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1040\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400780>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400780>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1041 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1041\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4007b0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4007b0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1042 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1042\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4007e0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4007e0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1043 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1043\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400810>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400810>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1044 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1044\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400840>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400840>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1045 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1045\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400870>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400870>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1046 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1046\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4008a0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4008a0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1047 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1047\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4008d0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4008d0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1048 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1048\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400900>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400900>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1049 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1049\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400930>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400930>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1050 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1050\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400960>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400960>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1051 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1051\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400990>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400990>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1052 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1052\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4009c0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4009c0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1053 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1053\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4009f0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4009f0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1054 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1054\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400a20>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400a20>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1055 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1055\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400a50>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400a50>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1056 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1056\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400a80>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400a80>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1057 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1057\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400ab0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400ab0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1058 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1058\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400ae0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400ae0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1059 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1059\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400b10>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400b10>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1060 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1060\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400b40>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400b40>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1061 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1061\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400b70>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400b70>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1062 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1062\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400ba0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400ba0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1063 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1063\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400bd0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400bd0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1064 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1064\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400c00>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400c00>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1065 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1065\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400c30>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400c30>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1066 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1066\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400c60>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400c60>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1067 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1067\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400c90>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400c90>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1068 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1068\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400cc0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400cc0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1069 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1069\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400cf0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400cf0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1070 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1070\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400d20>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400d20>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1071 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1071\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400d50>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400d50>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1072 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1072\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400d80>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400d80>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1073 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1073\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400db0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400db0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1074 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1074\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400de0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400de0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1075 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1075\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400e10>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400e10>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1076 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1076\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400e40>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400e40>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1077 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1077\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400e70>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400e70>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1078 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1078\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400ea0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400ea0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1079 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1079\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400ed0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400ed0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1080 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1080\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400f00>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400f00>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1081 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1081\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400f30>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400f30>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1082 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1082\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400f60>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400f60>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1083 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1083\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400f90>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400f90>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1084 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1084\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400fc0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400fc0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1085 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1085\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400ff0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a400ff0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1086 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1086\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a401020>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a401020>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1087 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1087\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a401050>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a401050>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1088 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1088\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a401080>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a401080>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1089 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1089\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4010b0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4010b0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1090 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1090\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4010e0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4010e0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1091 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1091\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a401110>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a401110>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1092 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1092\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a401140>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a401140>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1093 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1093\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a401170>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a401170>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1094 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1094\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4011a0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4011a0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1095 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1095\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4011d0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a4011d0>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1096 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1096\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a401200>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a401200>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1097 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1097\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a401230>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a401230>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1098 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1098\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a401260>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a401260>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Bestellung ORD-2026-1099 bezahlen",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Die Bestellung \"ORD-2026-1099\" wird ueber das Bezahl-Gateway bezahlt",
+              "result": {
+                "status": "failed",
+                "errorMessage": "HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a401290>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/checkout_steps.py\", line 88, in pay_order\n    gateway.charge(order_id, amount)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='payment-gw.internal.shop.example.com', port=443): Max retries exceeded with url: /v1/charges (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9c2a401290>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+              }
+            }
+          ]
+        },
+        {
+          "scenarioHeading": "Lagerbestand nach Bestellabbruch",
+          "items": [
+            {
+              "itemType": "step",
+              "stepText": "Der Lagerbestand des Artikels \"USB-C-Hub-7in1\" betraegt \"5\" Stueck",
+              "result": {
+                "status": "failed",
+                "errorMessage": "Lagerbestand falsch: erwartet 5 Stueck, tatsaechlich 3 Stueck fuer Artikel 'USB-C-Hub-7in1' (Reservierungen aus abgebrochenen Bestellungen werden offenbar nicht freigegeben)",
+                "stackTrace": "Traceback (most recent call last):\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/.venv/lib/python3.14/site-packages/getgauge/executor.py\", line 35, in execute_method\n    step_impl(*params)\n  File \"/Users/ci-runner/workspaces/demo-workspace-b/step_impl/inventory_steps.py\", line 41, in assert_stock_level\n    assert actual == expected, message\nAssertionError: Lagerbestand falsch: erwartet 5 Stueck, tatsaechlich 3 Stueck fuer Artikel 'USB-C-Hub-7in1' (Reservierungen aus abgebrochenen Bestellungen werden offenbar nicht freigegeben)"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

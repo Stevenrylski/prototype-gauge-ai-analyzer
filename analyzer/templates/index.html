@@ -14,6 +14,20 @@
 
     <main>
         <div id="message" class="message" hidden></div>
+
+        <nav id="tabs" class="tabs" hidden></nav>
+
+        <section class="cluster-bar" id="cluster-bar" hidden>
+            <button id="cluster-btn" class="secondary-btn">Aehnliche Ursachen finden (KI)</button>
+            <span id="cluster-status" class="cluster-status"></span>
+        </section>
+        <section id="cluster-results" class="cluster-results" hidden></section>
+
+        <section class="analyze-all-bar" id="analyze-all-bar" hidden>
+            <button id="analyze-all-btn">Alle Fehler mit KI analysieren</button>
+            <span id="analyze-all-status" class="analyze-all-status"></span>
+        </section>
+
         <ul id="failures" class="failures"></ul>
     </main>
 
@@ -21,18 +35,47 @@
         <li class="failure">
             <div class="failure-head">
                 <span class="badge"></span>
+                <span class="badge badge-workspaces" hidden></span>
+                <span class="badge badge-cached" hidden>Analyse vorhanden</span>
                 <span class="step"></span>
             </div>
             <p class="error"></p>
+            <details class="variants" hidden>
+                <summary class="variants-summary"></summary>
+                <ul class="variants-list"></ul>
+            </details>
             <p class="occurrences"></p>
-            <button class="analyze-btn">Mit KI analysieren</button>
+            <div class="actions">
+                <button class="analyze-btn">Mit KI analysieren</button>
+                <button class="reanalyze-btn secondary-btn" hidden>Neu analysieren</button>
+            </div>
             <div class="analysis" hidden>
-                <h3>Analyse</h3>
-                <pre class="analysis-text"></pre>
+                <h3>Analyse <span class="analysis-meta"></span></h3>
+                <p class="analysis-badges" hidden>
+                    <span class="badge analysis-class"></span>
+                    <span class="badge analysis-confidence"></span>
+                </p>
+                <div class="analysis-fields" hidden>
+                    <p class="analysis-field"><strong>Wahrscheinliche Ursache:</strong>
+                        <span class="analysis-cause"></span></p>
+                    <p class="analysis-field"><strong>Massnahme:</strong>
+                        <span class="analysis-action"></span></p>
+                </div>
+                <pre class="analysis-text" hidden></pre>
                 <details class="sent">
                     <summary>An die KI gesendet (anonymisiert)</summary>
                     <pre class="sent-text"></pre>
                 </details>
+                <div class="chat">
+                    <h4>Rueckfragen an die KI</h4>
+                    <div class="chat-history"></div>
+                    <form class="chat-form">
+                        <input type="text" class="chat-input"
+                               placeholder="Rueckfrage zu diesem Fehler stellen &hellip;"
+                               autocomplete="off">
+                        <button type="submit" class="chat-send">Senden</button>
+                    </form>
+                </div>
             </div>
         </li>
     </template>

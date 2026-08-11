@@ -4,3 +4,6 @@
 # Python-Bytecode
 __pycache__/
 *.pyc
+
+# Persistenter Analyse-Speicher (KI-Analysen, Chatverlaeufe, Cluster-Cache)
+data/

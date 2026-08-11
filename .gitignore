@@ -5,3 +5,11 @@ __pycache__/
 
 # Gauge-Laufzeit-Logs am Repo-Stamm (vom Language-Server erzeugt)
 logs/
+
+# Secrets / lokale Konfiguration (z. B. OpenAI-API-Key) niemals committen!
+.env
+*.env
+!.env.example
+
+# macOS-Systemdateien
+.DS_Store
